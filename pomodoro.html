@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>
+            POMODORO CLOCK
+        </title>
+        <link rel="stylesheet" href="pomodoro.css">
+    </head>
+    <body>
+        <!--User Story 1: Create a div with a class container and center it on the screen, container class must have a height of 460px and width of 220px;  -->
+        <div class="container">
+            <div class="upper" id="countdown">
+                <span class="minute">00 : </span> 
+                <span class="second"> 00 </span>
+            <!-- User Story 2: Apply a background colour to a container with little transparency and split the container into two parts horizontally. -->
+                <!-- Upper part of the container must display the countdown time. -->
+
+            </div>
+            <div class="middle">
+               <div class="session-name">click on start to start</div> 
+            </div>
+            <div class="lower">
+                    <!-- <div class="title"></div>
+                        session 1 -->
+                <!-- User Story 4: The bottom part of the container must have the following sections:
+
+A section to set session time in minutes. User must be able to increase and decrease session time using + and - icons. Session time must not go below 0
+
+A section to set break time same like session time implementation
+
+Add two buttons to start and reset the timer at bottom of container.
+
+If the time is running disable the + and - button of session time and break time. -->
+                    
+                    <div class="session-time">
+                            session time
+                            <div class="showtimes">
+                                
+                                <div class="s-min">00 min</div>
+                            </div>
+
+                            
+                            <div class="button-s">
+                                <button class="button-increment-session" onclick="s_increment(event)">+</button>
+                            
+                            
+                                <button class="button-decrement-session" onclick="s_decrement(event)">-</button>
+                            </div>
+                            
+                    </div>
+                    <div class="break-time">
+                         break time
+
+                            <div class="showtimeb">
+                                <div class="b-min">00 min</div>
+                            </div>
+                            
+                        <div class="button-b"> 
+                            <button class="button-increment-break " onclick="b_increment(event)">+</button>
+
+                            
+                            <button class="button-decrement-break" onclick="b_decrement(event)">-</button> 
+                        </div>   
+
+                    </div>
+                    
+                    
+            </div>
+            <div class="last-section">
+                <button class="play">start</button>
+                <button class="reset">reset</button>
+            </div>
+            
+        </div>
+    </body>
+    <script src="pomodoro2.js"></script>
+</html>
